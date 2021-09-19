@@ -68,7 +68,7 @@ const selectArray = array => {
 }
 
 module.exports = (list, info) => {
-	if (ENABLE_WEIGHTINGSYSTEM) selectList(list, info)
+	if (ENABLE_WEIGHTINGSYSTEM) return selectList(list, info)
 	else {
 		const {
 			duration
